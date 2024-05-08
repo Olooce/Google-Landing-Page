@@ -1,9 +1,11 @@
 body {
   font-family: "small arial", sans-serif;
+  margin: 0;
 }
 
 .wrap {
   min-width: 100%;
+  margin: 0 auto;
 }
 
 li {
@@ -27,6 +29,8 @@ a:hover {
 
 header {
   overflow: hidden;
+  background-color: #f2f2f2;
+  padding: 10px;
 }
 
 header ul {
@@ -54,6 +58,8 @@ header ul li a:hover {
   padding: 0.5em 0.75em;
   line-height: 28px;
   letter-spacing: normal;
+  border: none;
+  border-radius: 5px;
 }
 
 .button a {
@@ -72,6 +78,9 @@ header ul li a:hover {
 .main {
   clear: both;
   width: 100%;
+  text-align: center;
+  padding: 20px;
+  flex-direction: column;
 }
 
 .main img {
@@ -83,18 +92,55 @@ header ul li a:hover {
 
 form {
   text-align: center;
+  position: relative;
 }
 
 #searchbox {
   font-size: 16px;
   height: 26px;
-  width: 90%;
+  width: 100%;
+  border-radius: 30px;
   max-width: 600px;
   margin-top: 30px;
+  padding: 10px;
 }
-/*._2 {
-  display: inline;
-}*/
+
+.search {
+  width: 15px;
+  position: relative;
+  /*top: 20px;
+  left: 18px;*/
+  float: left;
+}
+
+.mic,
+.cam {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  /*top: 20px;
+  left: 620px;*/
+  float: right;
+}
+
+.icon {
+  padding: 10px;
+  min-width: 40px;
+  color: #62a0ea;
+  position: absolute;
+  top: 57.5%;
+  /*transform: translateY(-57.5%);  center the icons vertically */
+}
+.r1 {
+  right: 5%;
+}
+.r2 {
+  right: 1%;
+}
+
+.tittle {
+  font: smaller;
+}
 
 .submit {
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -104,9 +150,9 @@ form {
   line-height: 29px;
   margin: 16px auto;
   color: #444;
-  /*display: block;*/
-  width: 90%;
-  max-width: 300px;
+  display: inline-block;
+  width: auto;
+  padding: 0 10px;
 }
 
 .submit:hover {
@@ -124,26 +170,43 @@ footer {
   left: 0;
   width: 100%;
   min-width: 100%;
+  margin: auto 0; /*same effect as text-align: center*/
   height: 40px auto;
-  background: #ededed;
+  background: #f2f2f2;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   padding-bottom: 15px;
 }
+footer p {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: smaller;
+  border-bottom: 2px solid #ddd;
+}
+
 footer ul {
-  display: inline-block;
-  word-spacing: 0.5cqmin;
+  display: inline;
+  flex-wrap: wrap;
 }
 
 footer a {
-  margin-right: 2%;
   letter-spacing: 1px;
-  /*display: inline-block;*/
+  display: inline-block;
+  font-size: smaller;
+  margin-right: 0.5cm;
 }
 
 footer .left {
   float: left;
+  display: inline;
 }
-
+footer .center {
+  justify-content: center;
+  align-self: center;
+}
+.leaf {
+  width: 2px;
+}
 footer .right {
   float: right;
+  display: inline;
 }
