@@ -1,0 +1,207 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  min-height: 85dvh;
+}
+header {
+  padding: 15px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 99%;
+  justify-content: flex-end;
+}
+.nav a {
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #f2f3f4;
+  cursor: pointer;
+}
+.avatar:hover {
+  background: #dadadb;
+}
+.menu img {
+  width: 15px;
+  height: 15px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+/*-------section-1------ */
+.section-1 {
+  width: 100%;
+}
+
+.image {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 10%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.image img {
+  width: 150px;
+}
+
+.inputs {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin: 0 auto;
+  position: relative;
+}
+.icons {
+  width: 70%;
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 35%;
+}
+.icons i {
+  margin-left: 20px;
+  color: #9c9d9e;
+}
+.inputs input {
+  width: 70%;
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 30px;
+  outline: 0;
+}
+.inputs input:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 6px 6px 6px 6px;
+}
+.icons-right {
+  display: flex;
+  gap: 10px;
+  margin-right: 20px;
+}
+
+.icons-right img {
+  width: 20px;
+  cursor: pointer;
+}
+
+/*---------------Buttons-section-------------*/
+.buttons {
+  display: grid;
+  grid-gap: 30px;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.top-buttons button {
+  background: #f8f9fa;
+  font-size: 14px;
+  color: #222222;
+  font-weight: 500;
+  padding: 12px 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.top-buttons button:hover {
+  border-radius: 5px;
+  border: 1px solid #f2f3f1;
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+    rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+}
+.top-buttons button:last-child {
+  margin-left: 10px;
+}
+.bottom-text p {
+  font-size: 13px;
+  line-height: 28px;
+  color: #4d5156;
+  font-weight: 300;
+}
+.bottom-text a {
+  color: #1a0dab;
+  text-decoration: none;
+}
+.bottom-text a:hover {
+  text-decoration: underline;
+}
+/*-------------footer----------*/
+footer {
+  min-height: 15dvh;
+  background: #f2f2f2;
+}
+.top-footer,
+.bottom-footer {
+  margin-bottom: 15px;
+  padding: 15px;
+}
+.top-footer p {
+  padding-left: 0.5%;
+  font-size: 15px;
+  color: #202124;
+  line-height: 12.5px;
+  font-weight: 400;
+}
+.bottom-footer {
+  width: 99%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about,
+.teams {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.about a,
+.climate a,
+.teams a {
+  font-size: 14px;
+  line-height: 11.7px;
+  color: #202124;
+  font-weight: 400;
+  text-decoration: none;
+}
+.top-footer {
+  border-bottom: 1px solid #ddd;
+}
+
+.about a:hover,
+.climate a:hover,
+.teams a:hover {
+  text-decoration: underline;
+}
+
+.climate img {
+  width: 15px;
+  object-fit: contain;
+}

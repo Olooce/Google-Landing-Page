@@ -1,0 +1,17 @@
+@media (max-width: 768px) {
+  header {
+    /*background-color: red;*/
+  }
+  .inputs {
+    width: 80%;
+  }
+  .buttons {
+    width: 80%;
+  }
+  .inputs input {
+    width: 90%;
+  }
+  .bottom-footer {
+    flex-wrap: wrap;
+  }
+}
