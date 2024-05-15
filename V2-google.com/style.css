@@ -50,6 +50,10 @@ header {
   cursor: pointer;
 }
 
+.title{
+ background-color: cream;
+}
+
 /*-------section-1------ */
 .section-1 {
   width: 100%;
@@ -98,6 +102,7 @@ header {
 }
 .inputs input:hover {
   box-shadow: rgba(0, 0, 0, 0.24) 6px 6px 6px 6px;
+  transition: 1.5;
 }
 .icons-right {
   display: flex;
