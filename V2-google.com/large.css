@@ -1,7 +1,5 @@
 @media (max-width: 1200px) {
-  header {
-    /*background: mediumaquamarine;*/
-  }
+ 
   .inputs input {
     width: 90%;
   }
